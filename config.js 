@@ -1,0 +1,29 @@
+module.exports = {
+    botName: "Murphy-md",
+    ownerNumber: "242057954499@s.whatsapp.net", // Numéro du propriétaire (format international)
+    prefix: ".", // Préfixe des commandes
+    admins: ["242057954499@s.whatsapp.net", "242068554596@s.whatsapp.net"], // Admins du bot
+    databasePath: "./database.json", // Stockage des données (local JSON)
+
+    // Messages personnalisés
+    messages: {
+        welcome: "👋 Bienvenue sur Murphy-md ! Tapez !menu pour voir les commandes.",
+        noPermission: "⛔ Vous n'avez pas la permission d'utiliser cette commande.",
+        unknownCommand: "❓ Commande inconnue. Tapez !menu pour voir la liste.",
+    },
+
+    // Options de connexion
+    sessionPath: "./session", // Chemin de sauvegarde de la session WhatsApp
+
+    // Configuration du système de rôles
+    roles: {
+        superAdmin: ["242057954499@s.whatsapp.net"], // Numéros des super-admins
+        moderator: ["242068554596@s.whatsapp.net"], // Numéros des modérateurs
+    },
+
+    // Personnalisation des logs
+    logging: {
+        enabled: true, // Activer ou désactiver les logs
+        logFilePath: "./logs/bot.log", // Fichier de log
+    },
+};
